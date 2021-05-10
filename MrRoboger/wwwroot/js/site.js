@@ -29,18 +29,31 @@ $(document).ready(function () {
   });
 });
 
-function checkWinner() {
+function checkWinner(playerOneChoice, playerTwoChoice) {
   $.ajax({
     type: "POST",
-    data: { playerOneChoice: "rock", playerTwoChoice: "paper" },
+    data: {
+      playerOneChoice: playerOneChoice,
+      playerTwoChoice: playerTwoChoice,
+    },
     url: "/Home/RPSCheckWinner",
     success: function (data) {
       console.log(data);
+      $(".current-turn").text(data);
     },
   });
 }
 
-$(".check_winner").on("click", () => {
-  console.log("checking for a winner...");
-  checkWinner();
+let playerOneChoice;
+
+$(".choice").on("click", "img", function () {
+  console.log($(this)[0].alt);
+  if (!playerOneChoice) {
+    playerOneChoice = $(this)[0].alt;
+    // now update UI to say it's player 2's turn...
+    $(".current-turn").text("It's Player 2's Turn");
+  } else {
+    checkWinner(playerOneChoice, $(this)[0].alt);
+    // reset the game and display who wins
+  }
 });
