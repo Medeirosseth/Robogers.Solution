@@ -37,3 +37,4 @@
 /Users/seth/Desktop/MrRobogers.Solution/MrRoboger/obj/Debug/net5.0/MrRoboger.pdb
 /Users/seth/Desktop/MrRobogers.Solution/MrRoboger/obj/Debug/net5.0/MrRoboger.genruntimeconfig.cache
 /Users/seth/Desktop/MrRobogers.Solution/MrRoboger/obj/Debug/net5.0/MrRoboger.csproj.CopyComplete
+/Users/seth/Desktop/MrRobogers.Solution/MrRoboger/obj/Debug/net5.0/Razor/Views/Home/RockPaperScissors.cshtml.g.cs

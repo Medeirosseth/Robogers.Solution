@@ -15652,6 +15652,11 @@
       "FilePath": "/Users/seth/Desktop/MrRobogers.Solution/MrRoboger/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/seth/Desktop/MrRobogers.Solution/MrRoboger/Views/Home/RockPaperScissors.cshtml",
+      "TargetPath": "Views\\Home\\RockPaperScissors.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

@@ -28,6 +28,16 @@ namespace MrRoboger.Controllers
             return View();
         }
 
+        public IActionResult RockPaperScissors()
+        {
+            return View();
+        }
+
+        public string RPSCheckWinner(string playerOneChoice, string playerTwoChoice)
+        {
+            return Game.WhoWon(playerOneChoice, playerTwoChoice);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

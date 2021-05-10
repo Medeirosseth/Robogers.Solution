@@ -28,3 +28,19 @@ $(document).ready(function () {
     $("#results").text(robotLanguage.toString());
   });
 });
+
+function checkWinner() {
+  $.ajax({
+    type: "POST",
+    data: { playerOneChoice: "rock", playerTwoChoice: "paper" },
+    url: "/Home/RPSCheckWinner",
+    success: function (data) {
+      console.log(data);
+    },
+  });
+}
+
+$(".check_winner").on("click", () => {
+  console.log("checking for a winner...");
+  checkWinner();
+});
